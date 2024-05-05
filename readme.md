@@ -37,7 +37,7 @@ Se aplicaron los siguientes pasos:
 	
 ### <h3 style="color: white">[DESKTOP]</h3> 
 
- ![App Screenshot](https://i.ibb.co/fQ6Bkcy/Responsive-WEB.png)
+ ![App Screenshot](https://i.ibb.co/XSpt5Ts/Responsive-WEB.png)
 
 ### <h3 style="color: white">[Mobile Samsung S8+]</h3> 
 
