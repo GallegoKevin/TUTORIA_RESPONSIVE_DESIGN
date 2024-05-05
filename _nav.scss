@@ -87,7 +87,11 @@
 /*Responsive max-width */
 
 @media (max-width:880px){
-    .container{
+    .Container{
+        margin: 0 auto;
+    }
+
+    .Container-sm{
         margin: 0 auto;
     }
 
@@ -122,6 +126,12 @@
 
 @media (max-width:360px){
     .Container{
+        margin: 0 auto;
+        width: 230px;
+        margin-bottom: 20px;
+    }
+
+    .Container-sm{
         margin: 0 auto;
         width: 230px;
         margin-bottom: 20px;
