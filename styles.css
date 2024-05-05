@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -143,16 +144,25 @@ h1 {
   .Nav {
     margin: 0 auto;
   }
+  .Slider {
+    margin: 0 auto;
+  }
+  .Container {
+    margin: 0 auto;
+  }
+  .Container-sm {
+    margin: 0 auto;
+  }
 }
 @media (max-width: 360px) {
   .Container {
     margin: 0 auto;
-    width: 230px;
+    width: 330px;
     margin-bottom: 20px;
   }
   .Container-sm {
     margin: 0 auto;
-    width: 230px;
+    width: 330px;
     margin-bottom: 20px;
   }
   .Nav {
@@ -163,6 +173,119 @@ h1 {
   }
   .Header {
     margin: 20px;
+  }
+}
+.Slider {
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 500px;
+  border-radius: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+  border: 2px solid white;
+  animation: cambioColores 5s ease infinite alternate;
+}
+
+@keyframes cambioColores {
+  0% {
+    box-shadow: 0 0 10px #ff00ff; /* Inicia con sombreado rosa neón */
+  }
+  50% {
+    box-shadow: 0 0 10px #00ffff; /* Cambia a sombreado cian neón a la mitad */
+  }
+  100% {
+    box-shadow: 0 0 10px #6cff5f; /* Vuelve al sombreado rosa neón al final */
+  }
+}
+.Carrusel {
+  width: 100%;
+  display: flex;
+  position: relative;
+  animation: desplazamiento 10s linear infinite; /* Añadir desplazamiento automático */
+}
+
+.Slide {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.Carrusel-img {
+  width: 100%;
+  height: 500px;
+}
+
+@keyframes desplazamiento {
+  0% {
+    transform: translateX(0); /* Mantiene el primer slide visible al inicio */
+  }
+  20% {
+    transform: translateX(0); /* Mantiene el primer slide visible */
+  }
+  25% {
+    transform: translateX(-100%); /* Inicia la pausa después del primer slide */
+  }
+  45% {
+    transform: translateX(-100%); /* Mantiene el segundo slide visible */
+  }
+  50% {
+    transform: translateX(-200%); /* Inicia la pausa después del segundo slide */
+  }
+  70% {
+    transform: translateX(-200%); /* Mantiene el tercer slide visible */
+  }
+  75% {
+    transform: translateX(-300%); /* Inicia la pausa después del tercer slide */
+  }
+  100% {
+    transform: translateX(-300%); /* Mantiene el cuarto slide visible al final */
+  }
+}
+@media (max-width: 767px) {
+  .Slider {
+    margin: 0 auto;
+    width: 650px;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  .Carrusel-img {
+    width: 650px;
+    height: 250px;
+  }
+}
+@media (max-width: 600px) {
+  .Slider {
+    margin: 0 auto;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  .Carrusel-img {
+    width: 100%;
+    height: 250px;
+  }
+}
+@media (max-width: 360px) {
+  .Slider {
+    margin: 0 auto;
+    width: 300px;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  .Carrusel-img {
+    width: 100%;
+    height: 250px;
+  }
+}
+@media (max-width: 300px) {
+  .Slider {
+    margin: 0 auto;
+    width: 99%;
+    height: 250px;
+    margin-left: 10px;
+  }
+  .Carrusel-img {
+    width: 100%;
+    height: 250px;
   }
 }
 .Container-tittle {
@@ -196,7 +319,7 @@ h1 {
 }
 .Card-item .Card-body .Card-header .Card-img {
   width: 100%;
-  height: 100px;
+  height: 150px;
   background-color: rgb(75, 255, 253);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -216,13 +339,30 @@ h1 {
 }
 
 /*Responsive min-width*/
+@media (min-width: 767px) {
+  .Container {
+    margin-bottom: 10px;
+    width: 87%;
+    margin-top: 10px;
+  }
+  .Container-sm {
+    margin-bottom: 10px;
+    width: 87%;
+    margin-top: 10px;
+  }
+}
 @media (min-width: 1570px) {
   .Card {
     width: 1000px;
     margin: 0 auto;
   }
   .Header {
-    width: 1000px;
+    width: 87%;
     margin: 0 auto;
+  }
+  .Slider {
+    width: 87%;
+    margin: 0 auto;
+    margin-top: 20px;
   }
 }/*# sourceMappingURL=styles.css.map */

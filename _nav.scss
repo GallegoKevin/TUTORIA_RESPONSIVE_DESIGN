@@ -120,6 +120,17 @@
     .Nav{
         margin:0 auto;
     }
+    .Slider{
+        margin: 0 auto;
+    }
+    .Container{
+        margin: 0 auto;
+    }
+
+    .Container-sm{
+        margin: 0 auto;
+    }
+
 }
 
 
@@ -127,13 +138,13 @@
 @media (max-width:360px){
     .Container{
         margin: 0 auto;
-        width: 230px;
+        width: 330px;
         margin-bottom: 20px;
     }
 
     .Container-sm{
         margin: 0 auto;
-        width: 230px;
+        width: 330px;
         margin-bottom: 20px;
     }
     .Nav{
