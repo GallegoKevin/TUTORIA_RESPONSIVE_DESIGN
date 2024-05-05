@@ -184,6 +184,7 @@ h1 {
   overflow: hidden;
   border: 2px solid white;
   animation: cambioColores 5s ease infinite alternate;
+  width: 87%;
 }
 
 @keyframes cambioColores {
