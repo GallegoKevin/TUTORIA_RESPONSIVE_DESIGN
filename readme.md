@@ -31,7 +31,7 @@ Se aplicaron los siguientes pasos:
 2. Se incorporaron imagenes en las listas de navegación
 3. Se apliaron degradados a los textos
 4. Se aplico un degradado a los botones de navegación
-5. Se  creo dos cards  de servicios productos, se incorporaron imagenes y se aplicacron efectos de colores 
+5. Se  creo dos card  de servicios productos, se incorporaron imagenes y se aplicacron efectos de colores 
 6. Se aplico responsive mediante el uso de Media querys como max-width y min-width para las pantallas de Desktop y Mobile
 
 	
