@@ -32,6 +32,16 @@ header {
   padding: 20px;
 }
 
+.Container-sm {
+  margin-left: 100px;
+  margin-right: 100px;
+  border: 1px solid rgb(223, 236, 164);
+  margin-top: 10px;
+  background: radial-gradient(circle, #f5efbe, #a9e6e6, #f5beb8);
+  border-radius: 20px;
+  padding: 20px;
+}
+
 h1 {
   background-image: linear-gradient(135deg, #e99904, #FF0000, #61540d);
   -webkit-background-clip: text;
@@ -113,7 +123,7 @@ h1 {
 /*Responsive max-width */
 @media (max-width: 880px) {
   .container {
-    margin: 0;
+    margin: 0 auto;
   }
   .Nav {
     justify-content: space-between;
@@ -129,6 +139,22 @@ h1 {
 @media (min-width: 1500px) {
   .Nav {
     margin: 0 auto;
+  }
+}
+@media (max-width: 360px) {
+  .Container {
+    margin: 0 auto;
+    width: 230px;
+    margin-bottom: 20px;
+  }
+  .Nav {
+    justify-content: space-between;
+  }
+  .Nav-list {
+    display: none;
+  }
+  .Header {
+    margin: 20px;
   }
 }
 .Container-tittle {

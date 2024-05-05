@@ -88,7 +88,43 @@
 
 @media (max-width:880px){
     .container{
-        margin: 0;
+        margin: 0 auto;
+    }
+
+    .Nav{
+        justify-content: space-between;
+        &-list{
+            display: none;
+        }
+    }
+
+    .Header{
+        margin: 20px;
+        
+    }
+
+}
+
+
+
+
+
+
+/*Responsive  min-Width*/
+
+@media(min-width:1500px){
+    .Nav{
+        margin:0 auto;
+    }
+}
+
+
+
+@media (max-width:360px){
+    .Container{
+        margin: 0 auto;
+        width: 230px;
+        margin-bottom: 20px;
     }
     .Nav{
         justify-content: space-between;
@@ -102,12 +138,3 @@
     }
 
 }
-
-/*Responsive  min-Width*/
-
-@media(min-width:1500px){
-    .Nav{
-        margin:0 auto;
-    }
-}
-
