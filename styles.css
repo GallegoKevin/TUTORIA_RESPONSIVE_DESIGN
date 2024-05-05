@@ -1,0 +1,194 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./img/pexels-codioful-7130557.jpg");
+  background-size: cover;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #034e5c;
+  font-weight: bold;
+}
+
+header {
+  border: 1px solid orangered;
+  margin-top: 5px;
+  background: linear-gradient(rgba(243, 210, 212, 0.795), rgba(252, 243, 213, 0.37));
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(241, 147, 58, 0.76);
+  -webkit-backdrop-filter: blur(3.1px);
+          backdrop-filter: blur(3.1px);
+}
+
+.Container {
+  margin-left: 100px;
+  margin-right: 100px;
+  border: 1px solid grey;
+  margin-top: 10px;
+  background: radial-gradient(circle, #FFFFFF, #E0FFFF, #FFE4E1);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+h1 {
+  background-image: linear-gradient(135deg, #e99904, #FF0000, #61540d);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.Nav {
+  margin: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Nav-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.Nav-logo .Logo {
+  border-radius: 10px;
+  width: 30px;
+  height: 20px;
+  background-image: url("./img/Logo.png"); /* Ruta de la imagen de fondo */
+  background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+  background-position: center; /* Centra la imagen dentro del contenedor */
+  padding: 20px;
+}
+.Nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.Nav-list .Nav-item {
+  padding: 10px;
+}
+.Nav-list .Nav-item .Nav-link {
+  border: 1px solid rgba(255, 255, 255, 0.247);
+  border-radius: 15px;
+  padding: 10px;
+  text-decoration: none;
+  color: #034e5c;
+  transition: all 0.3s ease-in;
+}
+.Nav-list .Nav-item .Nav-link .Nav-img {
+  width: 15px;
+  margin-right: 5px;
+}
+.Nav-list .Nav-item .Nav-link:hover {
+  background: linear-gradient(rgba(241, 226, 136, 0.322), rgba(148, 206, 110, 0.37));
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(3.1px);
+          backdrop-filter: blur(3.1px);
+  color: rgb(211, 49, 0);
+}
+.Nav-list .Nav-item .Nav--active {
+  background: linear-gradient(rgba(241, 226, 136, 0.322), rgba(148, 206, 110, 0.37));
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(3.1px);
+          backdrop-filter: blur(3.1px);
+  color: rgb(211, 49, 0);
+}
+.Nav-button .btn {
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #FFA500, #FF7F00);
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.Nav-button .btn:hover {
+  background: linear-gradient(135deg, #FF0000, #FF00FF);
+}
+
+/*Responsive max-width */
+@media (max-width: 880px) {
+  .container {
+    margin: 0;
+  }
+  .Nav {
+    justify-content: space-between;
+  }
+  .Nav-list {
+    display: none;
+  }
+  .Header {
+    margin: 20px;
+  }
+}
+/*Responsive  min-Width*/
+@media (min-width: 1500px) {
+  .Nav {
+    margin: 0 auto;
+  }
+}
+.Container-tittle {
+  background: linear-gradient(135deg, #808080, #4682B4, #696969);
+  background-clip: text;
+  -webkit-background-clip: text; /* Para navegadores basados en WebKit */
+  color: transparent;
+  text-align: center;
+}
+
+.Card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.Card-item {
+  background: linear-gradient(rgba(255, 255, 255, 0.322), rgba(236, 236, 236, 0.37));
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  width: 300px;
+  transition: box-shadow 0.2s ease-in;
+}
+.Card-item .Card-body {
+  border: 2px solid rgb(116, 176, 250);
+  box-shadow: 0px 0px 5px 2px #b8cbdb;
+  border-radius: 5px;
+  color: rgb(53, 61, 77);
+}
+.Card-item .Card-body .Card-header .Card-img {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(75, 255, 253);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 5px;
+}
+.Card-item .Card-body .Card-content {
+  padding: 20px;
+}
+.Card-item .Card-body .Card-content h2 {
+  margin-bottom: 10px;
+}
+.Card-item .Card-body .Card-content span {
+  font-weight: normal;
+}
+.Card-item-item:hover {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/*Responsive min-width*/
+@media (min-width: 1570px) {
+  .Card {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .Header {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,113 @@
+.Nav{
+    
+    margin:  10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        .Logo{
+            border-radius: 10px;
+            width: 30px;
+            height: 20px;
+            background-image: url('./img/Logo.png'); /* Ruta de la imagen de fondo */
+            background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+            background-position: center; /* Centra la imagen dentro del contenedor */
+            padding: 20px;
+        }
+    }
+    &-list{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+        .Nav-item{
+            padding: 10px;
+            
+            .Nav-link{
+                border: 1px solid  rgba(255, 255, 255, 0.247);
+                border-radius: 15px;
+                padding: 10px;
+                text-decoration: none;
+                color: $text-color;
+                transition: all 0.3s ease-in;
+
+                .Nav-img{
+                    width: 15px;
+                    margin-right: 5px;
+                
+            
+            }
+
+                
+            }
+            .Nav-link:hover{
+                background: linear-gradient(rgba(241, 226, 136, 0.322), rgba(148, 206, 110, 0.37)) ;
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(3.1px);
+                color: rgb(211, 49, 0);
+            }
+            .Nav--active{
+                background: linear-gradient(rgba(241, 226, 136, 0.322), rgba(148, 206, 110, 0.37)) ;
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(3.1px);
+                color: rgb(211, 49, 0);
+            }
+        }
+
+    }
+
+    &-button{
+        .btn{
+           
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #FFA500, #FF7F00);
+
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            
+        }
+        .btn:hover{
+            background: linear-gradient(135deg, #FF0000, #FF00FF);
+        }
+    }
+
+}
+
+/*Responsive max-width */
+
+@media (max-width:880px){
+    .container{
+        margin: 0;
+    }
+    .Nav{
+        justify-content: space-between;
+        &-list{
+            display: none;
+        }
+    }
+
+    .Header{
+        margin: 20px;
+    }
+
+}
+
+/*Responsive  min-Width*/
+
+@media(min-width:1500px){
+    .Nav{
+        margin:0 auto;
+    }
+}
+

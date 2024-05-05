@@ -1,0 +1,78 @@
+.Container-tittle{
+    background: linear-gradient(135deg, #808080, #4682B4, #696969);
+    background-clip: text;
+    -webkit-background-clip: text; /* Para navegadores basados en WebKit */
+    color: transparent;
+    text-align:  center;
+}
+
+
+
+.Card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+
+    &-item{
+        background:  linear-gradient(rgb(255, 255, 255, 0.322), rgb(236, 236, 236,0.37));
+        border-radius: 16px;
+        box-shadow: 0  4px 30px rgba(0,0,0,0.1);
+        margin-top: 10px;
+        width:  300px;
+        transition: box-shadow 0.2s ease-in;
+        .Card-body{
+            border: 2px solid rgb(116, 176, 250);
+            box-shadow: 0px 0px 5px 2px #b8cbdb;
+            border-radius: 5px;
+            color: $text-color-card;
+            .Card-header{
+                
+                .Card-img{
+                    
+                    width: 100%;
+                    height: 100px;
+                    background-color: rgb(75, 7152, 253);
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    margin-bottom: 5px;
+
+                }
+            }
+            .Card-content{
+                padding: 20px;
+                
+                h2{
+                    margin-bottom: 10px;
+
+                }
+                span{
+                    font-weight: normal;
+                }
+            }
+        }
+    
+        &-item:hover{
+            box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+
+        }
+    }
+
+}
+
+
+/*Responsive min-width*/
+@media (min-width:1570px){
+    .Card{
+        width: 1000px;
+        margin:  0 auto;
+    }
+    
+    .Header{
+        width: 1000px;
+        margin: 0 auto;
+    }
+}
+
